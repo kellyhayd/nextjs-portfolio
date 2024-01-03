@@ -5,36 +5,34 @@ import TabButton from "./TabButton";
 
 const TAB_DATA = [
   {
-    title: "Skills",
-    id: "skills",
-    content: (
-      <ul className="list-disc pl-2">
-        <li>Node.js</li>
-        <li>Express</li>
-        <li>PostgreSQL</li>
-        <li>Sequelize</li>
-        <li>JavaScript</li>
-        <li>React</li>
-      </ul>
-    ),
-  },
-  {
     title: "Education",
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Fullstack Academy of Code</li>
-        <li>University of California, Santa Cruz</li>
+        <li>Publicidade e Propaganda [Universidade Católica Dom Bosco/MS]</li>
+        <li>MBA em Cinema [Latin American Film Institute/SP]</li>
+        <li>Direção de Arte [Ateliê Bucareste/SP]</li>
+        <li>Ferramentas para Direção de Cinema com Simon Phillips [Lugar de Cinema/MG]</li>
       </ul>
     ),
   },
   {
-    title: "Certifications",
-    id: "certifications",
+    title: "award",
+    id: "award",
     content: (
       <ul className="list-disc pl-2">
-        <li>AWS Cloud Practitioner</li>
-        <li>Google Professional Cloud Developer</li>
+        <li>Leão de Prata - Film Cannes [True Colors - 2018]</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Skills",
+    id: "skills",
+    content: (
+      <ul className="list-disc pl-2">
+        <li>SketchUp</li>
+        <li>Adobe Photoshop</li>
+        <li>Adobe Premiere</li>
       </ul>
     ),
   },
@@ -57,34 +55,33 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            I am a full stack web developer with a passion for creating
-            interactive and responsive web applications. I have experience
-            working with JavaScript, React, Redux, Node.js, Express, PostgreSQL,
-            Sequelize, HTML, CSS, and Git. I am a quick learner and I am always
-            looking to expand my knowledge and skill set. I am a team player and
-            I am excited to work with others to create amazing applications.
+          Atuo como Diretora de Arte para publicidade e cinema, com foco no desenvolvimento 
+          da linguagem visual, liderança de equipe de filmagem e de produção de objetos, composição e orquestração de cenas.
+          O ambiente da publicidade me permitiu ganhar experiência em gerenciamento de orçamento de custo/tempo para atingir
+          metas de negócios em um ambiente altamente criativo.
+
           </p>
           <div className="flex flex-row justify-start mt-8">
-            <TabButton
-              selectTab={() => handleTabChange("skills")}
-              active={tab === "skills"}
-            >
-              {" "}
-              Skills{" "}
-            </TabButton>
             <TabButton
               selectTab={() => handleTabChange("education")}
               active={tab === "education"}
             >
               {" "}
-              Education{" "}
+              Formação{" "}
             </TabButton>
             <TabButton
-              selectTab={() => handleTabChange("certifications")}
-              active={tab === "certifications"}
+              selectTab={() => handleTabChange("award")}
+              active={tab === "award"}
             >
               {" "}
-              Certifications{" "}
+              Prêmiação{" "}
+            </TabButton>
+            <TabButton
+              selectTab={() => handleTabChange("skills")}
+              active={tab === "skills"}
+            >
+              {" "}
+              Habilidades{" "}
             </TabButton>
           </div>
           <div className="mt-8">

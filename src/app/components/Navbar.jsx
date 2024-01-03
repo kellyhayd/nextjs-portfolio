@@ -1,21 +1,22 @@
 "use client";
 import Link from "next/link";
 import React, { useState } from "react";
+import Image from "next/image";
 import NavLink from "./NavLink";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "./MenuOverlay";
 
 const navLinks = [
   {
-    title: "About",
-    path: "#about",
-  },
-  {
-    title: "Projects",
+    title: "Projetos",
     path: "#projects",
   },
   {
-    title: "Contact",
+    title: "Sobre",
+    path: "#about",
+  },
+  {
+    title: "Contato",
     path: "#contact",
   },
 ];
@@ -25,13 +26,20 @@ const Navbar = () => {
 
   return (
     <nav className="fixed mx-auto border border-[#33353F] top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100">
-      <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
-        <Link
+      <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-14 py-2">
+        <Image
+         src="/images/kh-logo.png"
+         alt="logo image"
+         className="flex transform -translate-x-1/2 -translate-y-1/5"
+         width={60}
+         height={60}
+       />
+        {/* <Link
           href={"/"}
           className="text-2xl md:text-5xl text-white font-semibold"
         >
           LOGO
-        </Link>
+        </Link> */}
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
             <button
