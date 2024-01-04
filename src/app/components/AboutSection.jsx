@@ -53,13 +53,12 @@ const AboutSection = () => {
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         <Image src="/images/about-image.png" width={500} height={500} />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
+          <h2 className="text-4xl font-bold text-white mb-4">Sobre mim</h2>
           <p className="text-base lg:text-lg">
           Atuo como Diretora de Arte para publicidade e cinema, com foco no desenvolvimento 
           da linguagem visual, liderança de equipe de filmagem e de produção de objetos, composição e orquestração de cenas.
           O ambiente da publicidade me permitiu ganhar experiência em gerenciamento de orçamento de custo/tempo para atingir
           metas de negócios em um ambiente altamente criativo.
-
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
